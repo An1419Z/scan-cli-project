@@ -1,0 +1,6 @@
+project:
+name: "MiProyecto"
+version: "1.0.0"
+rules:
+- include: "**/*.java"
+- exclude: "**/tests/**"
