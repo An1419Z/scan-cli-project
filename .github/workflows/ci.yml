@@ -20,7 +20,7 @@ docker build -t scan-cli-image .
 # 3. Ejecutar análisis
 - name: Run Scan CLI
 run: |
-docker run --rm scan-cli-image ./scan-cli-plugin analyze --source ./src --report ./report.json
+docker scout cves scan-cli-image ./scan-cli-plugin analyze --source ./src --report ./report.json
 # 4. Guardar el reporte como artefacto
 - name: Upload Report
 uses: actions/upload-artifact@v3
